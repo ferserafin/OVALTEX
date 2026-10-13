@@ -40,3 +40,8 @@ netlify deploy --prod
 - Si no existe `APP_PASSWORD`, la API se niega a responder (para no dejar tus datos públicos).
 - Los datos viven en Netlify Blobs: persisten entre despliegues.
 - El criterio del semáforo (fecha de referencia y días de aviso) se ajusta al final del Dashboard.
+
+## Importar desde Excel (nuevo)
+En la pestaña "Exportar / Importar" sube tu Excel o CSV. Modos: solo agregar nuevas, agregar y actualizar existentes, o reemplazar todo.
+Para actualizar la app ya desplegada reemplaza en GitHub estos dos archivos (Netlify redespliega solo):
+`public/index.html` y `netlify/functions/api.mjs`.
